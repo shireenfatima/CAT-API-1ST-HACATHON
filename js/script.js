@@ -7,7 +7,6 @@ document.body.innerHTML = `<div class="heading-container">
 </div>
 <div id="mainContainer" class="main-container"></div>`;
 
-
 let catData1;
 const getData= async ()=>{
     try{
@@ -30,10 +29,11 @@ const getData= async ()=>{
 };
 getData();
 
-
 const displayData = (obj) => {
+    console.log(obj.id)
     mainContainer.innerHTML += `
     <div class="container">
+    <img src="https://cataas.com/cat/${obj.id}" width="200" height="200"/>
     <p class="parablue">Cat Id:<br><span>${obj.id}</span></p>
     <p class="parablue">Created_at:<br><span>${obj.created_at}</span></p>
     <p class="parablue">Tags:<br><span>${obj.tags}</span></p>
@@ -74,5 +74,4 @@ if(textEntered!==""){
 }
 
 })
-
 
