@@ -2,7 +2,7 @@
 
 document.body.innerHTML = `<div class="heading-container">
 <h1>CAT API</h1>
-<input type="text" placeholder="Search" id="search">
+<input type="text" placeholder="Search by cat tags ex: jump, fail and gif etc.." id="search">
 <button type="button" class="btn btn-primary" id="searchbar">search</button>
 </div>
 <div id="mainContainer" class="main-container"></div>`;
